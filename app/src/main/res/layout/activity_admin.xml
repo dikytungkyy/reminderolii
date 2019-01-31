@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_loading"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_idoli"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:id="@+id/admin_noPol"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_idoli"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Nomor Polisi"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_kmawal"
+        android:hint="Kilometer Sekarang"
+        android:inputType="number"
+        android:layout_below="@id/admin_noPol"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_kmservice"
+        android:hint="Kilometer Service"
+        android:inputType="number"
+        android:layout_below="@id/admin_kmawal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_namamobil"
+        android:hint="Nama Mobil"
+        android:layout_below="@id/admin_kmservice"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_jenismobil"
+        android:hint="Jenis Mobil"
+        android:layout_below="@id/admin_namamobil"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_jenismobil"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_input_selesai"
+            android:text="Selesai"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

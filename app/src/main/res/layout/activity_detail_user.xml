@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logosm"
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_user"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_username"
+        android:text="@string/nama"
+        android:layout_below="@+id/img_user"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_nopol"
+        android:text="@string/no_polisi"
+        android:textSize="16sp"
+        android:layout_below="@+id/detail_username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_jenisoli"
+        android:text="@string/jenis_oli"
+        android:layout_below="@+id/detail_nopol"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_kilometersekarang"
+        android:text="@string/kilometer_sekarang"
+        android:layout_below="@+id/detail_jenisoli"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detaiKmService"
+        android:text="@string/kilometer_service"
+        android:layout_below="@+id/detail_kilometersekarang"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detaiNamaMobil"
+            android:text="@string/nama_mobil"
+            android:layout_below="@+id/detaiKmService"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detaiJenisMobil"
+            android:text="@string/jenis_mobil"
+            android:layout_below="@+id/detaiNamaMobil"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            />
+<ProgressBar
+    android:id="@+id/loadingDetail"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:visibility="gone"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/edt_button_detail"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detaiJenisMobil"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+
+
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="EDIT" />
+
+        <Button
+            android:id="@+id/hps_button_detail"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detaiJenisMobil"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/edt_button_detail"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="HAPUS" />
+
+        <Button
+            android:id="@+id/logout_button_detail"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hps_button_detail"
+            android:layout_centerHorizontal="true"
+            android:text="Logout" />
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

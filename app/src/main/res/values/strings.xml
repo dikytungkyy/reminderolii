@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aplikasi Reminder Ganti Oli</string>
+    <string name="nama">Id User : %s</string>
+    <string name="no_polisi">No Polisi : %s</string>
+    <string name="jenis_oli">Id Oli : %s</string>
+    <string name="kilometer_sekarang">Kilometer Sekarang : %s</string>
+    <string name="kilometer_service">Kilometer Service : %s</string>
+    <string name="nama_mobil">Nama Mobil : %s</string>
+    <string name="jenis_mobil">Jenis Mobil : %s</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/logosm"
+
+        />
+
+    <TextView
+        android:id="@+id/idUseritem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/gambar"
+        android:text="@string/nama"
+        android:textSize="16sp"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/noPolitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idUseritem"
+        android:layout_toRightOf="@+id/gambar"
+        android:text="@string/no_polisi"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/jenisOliItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noPolitem"
+        android:layout_toRightOf="@+id/gambar"
+        android:text="@string/jenis_oli"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/kilometer_sekarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jenisOliItem"
+        android:layout_toRightOf="@+id/gambar"
+        android:text="@string/kilometer_sekarang"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/kilometer_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kilometer_sekarang"
+        android:layout_toRightOf="@+id/gambar"
+        android:text="@string/kilometer_service"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/jenisMobilItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kilometer_service"
+        android:layout_toRightOf="@+id/gambar"
+        android:text="@string/nama_mobil"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/namaMobilItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jenisMobilItem"
+        android:layout_toRightOf="@+id/gambar"
+        android:text="@string/jenis_mobil"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+
+        />
+
+
+</RelativeLayout>
